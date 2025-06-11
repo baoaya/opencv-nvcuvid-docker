@@ -14,7 +14,7 @@ The build recipes include the following versions:
 
 ## Prerequisites
 - Download compatible versions of:
-  - **OpenCV** source code ([download opencv-4.11.0](https://github.com/opencv/opencv/archive/refs/tags/4.11.0.zip) [opencv-contrib-4.11.0](https://github.com/opencv/opencv_contrib/releases/tag/4.11.0))
+  - **OpenCV** source code ([download opencv-4.11.0](https://github.com/opencv/opencv/archive/refs/tags/4.11.0.zip) [opencv-contrib-4.11.0](https://github.com/opencv/opencv_contrib/archive/refs/tags/4.11.0.zip))
   - **NVIDIA Video Codec SDK** ([download video_codec_sdk_12.2.72.zip](https://developer.nvidia.com/designworks/video-codec-sdk/secure/12.2/video_codec_sdk_12.2.72.zip))
 - Docker installed on your system
 
