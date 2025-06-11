@@ -32,5 +32,11 @@ RUN unzip -j Video_Codec_SDK_${VIDEOSDK_VERSION}.zip \
           Video_Codec_SDK_${VIDEOSDK_VERSION}/Lib/linux/stubs/x86_64/libnvidia-encode.so \
           -d /usr/local/cuda/lib64/stubs
 
-# pkg-config files
+ENV OPENCV="4.11.0"
+ENV CUDA_ARCH_BIN="8.6"
+# copy files
 COPY usr /usr
+COPY opencv-${OPENCV}.zip
+COPY opencv_contrib-${OPENCV}.zip
+RUN unzip opencv-${OPENCV}.zip -d /opt/opencv/
+RUN unzip opencv_contrib-${OPENCV}.zip -d /opt/opencv/
