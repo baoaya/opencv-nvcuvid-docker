@@ -36,7 +36,9 @@ ENV OPENCV="4.11.0"
 ENV CUDA_ARCH_BIN="8.6"
 # copy files
 COPY usr /usr
-COPY opencv-${OPENCV}.zip
-COPY opencv_contrib-${OPENCV}.zip
-RUN unzip opencv-${OPENCV}.zip -d /opt/opencv/
-RUN unzip opencv_contrib-${OPENCV}.zip -d /opt/opencv/
+COPY opencv-${OPENCV}.zip /opt/opencv
+COPY opencv_contrib-${OPENCV}.zip /opt/opencv
+RUN unzip opencv-${OPENCV}.zip -d /opt/opencv
+RUN unzip opencv_contrib-${OPENCV}.zip -d /opt/opencv
+COPY build.sh /opt/opencv
+RUN chmod +x build.sh
