@@ -10,7 +10,7 @@ The build recipes include the following versions:
 
 - Video Codec SDK: 12.2.72
 - CUDA: 12.4.1
-- 
+- OpenCV: 4.11.0
 
 ## Prerequisites
 - Download compatible versions of:
